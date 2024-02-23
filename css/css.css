@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-seif";
+}
+
+/* Global styles */
+body {
+  background: #3952a3;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*Preloader*/
+.preloader {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  background-color: #ffa127;
+  /*Preloader*/
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Navbar styles */
+#navbar {
+  background-image: linear-gradient(90deg, rgba(255, 182, 122, 1) 0%, rgba(24, 31, 247, 1) 84%);
+}
+
+.nav-item {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+.nav-item:hover {
+  background: #f6b93b;
+  transition: all 1.5s ease 0s;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.carousel-item {
+  height: 950px;
+}
+
+/* Remove border from toggler */
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon {
+  width: 25px;
+  height: 2px;
+  background-color: #e74c3c;
+  display: block;
+  transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar {
+  margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #ffffff;
+}
+/* Navbar styles */
+
+/*Vidio*/
+.back-video {
+  width: 100%;
+  right: 0;
+  z-index: -1;
+  filter: brightness(30%);
+}
+/*Vidio*/
+
+/*Hamburger menu*/
+#toggler,
+label {
+  display: none;
+  margin-left: 250px;
+}
+/*Hamburger menu*/
+
+/*konten*/
+.card {
+  width: 23rem;
+  border-radius: 20px;
+  border: 10px solid rgb(222, 222, 222);
+}
+
+.populer {
+  margin-bottom: 60px;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  background-image: linear-gradient(90deg, rgba(255, 182, 122, 1) 0%, rgba(24, 31, 247, 1) 84%);
+}
+
+.populer h5 {
+  font-size: 50px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.console-container {
+  font-family: Khula;
+  font-size: 4em;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  position: relative;
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
+.figure {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  border-radius: 15px; /* Anda dapat menyesuaikan nilai border-radius sesuai kebutuhan Anda */
+}
+
+.figure:hover {
+  transform: scale(1.1); /* Anda dapat menyesuaikan nilai scaling sesuai keinginan */
+  filter: brightness(60%); /* Mengurangi kecerahan menjadi 80% saat dihover */
+  margin-bottom: 10px;
+  border-radius: 0px; /* Anda dapat menyesuaikan nilai border-radius sesuai kebutuhan Anda */
+}
+
+.buttonmaps {
+  width: 100px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2781ff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0, 3s ease;
+}
+
+#button {
+  border: none;
+  font-size: 13px;
+  color: #fff;
+  background-color: #2781ff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0, 3s ease;
+}
+
+#button:hover {
+  background-color: #ffa127;
+}
+
+.cnt {
+  align-content: center;
+}
+
+.judulkonten h5 {
+  font-size: 30px;
+}
+
+.judulkonten {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  width: 80%;
+  padding-left: 50px;
+  background-image: linear-gradient(90deg, rgba(255, 182, 122, 1) 0%, rgba(24, 31, 247, 1) 84%);
+  border-radius: 0px 101px 101px 0px;
+  -webkit-border-radius: 0px 101px 101px 0px;
+  -moz-border-radius: 0px 101px 101px 0px;
+  color: #fff;
+}
+
+.judulkonten:hover {
+  width: 90%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Mengatur posisi di sebelah kanan */
+  z-index: 99; /* Mengatur z-index agar tombol muncul di atas konten */
+  background-color: rgba(24, 31, 247, 1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: #ffa127;
+}
+/*konten*/
+
+/* Footer styles */
+.footer {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(255, 176, 41, 1) 0%, rgb(45, 115, 255) 62%);
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+/* Footer styles */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  
+  .loading img {
+    width: 23rem;
+  }
+
+  .judulkonten {
+    height: auto;
+  }
+
+  .judulkonten h5 {
+    font-size: 14px;
+  }
+
+  .populer h5 {
+    font-size: 30px;
+  }
+
+  #button {
+    font-size: 12px;
+  }
+
+  .harga {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 10rem;
+  }
+
+  .hero {
+    margin-top: 90px;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .console-container {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .console-underscore {
+    left: 5px; /* Adjust position for smaller screens */
+  }
+
+  #carouselExampleIndicators {
+    display: none;
+  }
+
+  .navbar {
+    top: 0;
+  }
+
+  .judulkonten {
+    margin-top: 100px;
+  }
+
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  label {
+    display: inline-flex;
+  }
+
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+
+  .navbar .logo {
+    display: none;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 170px;
+  }
+
+  .nav-links li {
+    margin-top: 10px;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
